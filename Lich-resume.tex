@@ -46,64 +46,92 @@
 
 \title{Shen Huang's Resume}
 
-\nopagenumbers{}
+% \nopagenumbers{}
+\usepackage{lastpage}%获得总页数
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rfoot{\thepage\ / \pageref{LastPage}}%当前页 of 总页数
 
 \begin{document}
 
 \maketitle
 
-\section{Computer Skills} 
-  \cvline{Languages:}{Python, C/C++, Ruby, JavaScript, Mathematica, Matlab}
-\section{Experience} 
+\section{Education}
+\cventry{Aug. 2016 - Present}{Master of Science, Computer Science,  University of Colorado Boulder}{Boulder, CO}{}{}{Overall GPA: Null} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\cventry{Aug. 2012 - Jun. 2016}{Bachelor of Engineering, Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS Majors GPA: 3.6 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\section{Research Experience} 
   % Bioinformatics 研究
-  \cventry{September 2015 - July 2016}{Researcher in Machine Learning}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, China}{Supervised by Dongjun Yu}{
+  \cventry{Sep. 2015 - Jul. 2016}{Research Assistant}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, P.R. China}{Supervised by Dongjun Yu}{
     \begin{itemize}
       \item Tried to solve a protein problem of predicting high-dimensional structural information via little information of protein sequence.
-      \item The traditional strategy for this topic is using machine learning methods. Implemented these and propose a new feature extraction method.
+      \item The traditional strategy for this topic was using machine learning methods. Implemented these and propose a new feature extraction method.
       \item Tried to use DNN model in this problem and succeeded, which was not shown work in this field. 
     \end{itemize}
   }
   % RM 视觉比赛
-  \cventry{April 2016 - June 2016}{Computer Vision Engineer}{NJUST}{Nanjing, China}{}{
+  \cventry{Ari. 2016 - Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
     \begin{itemize}
-      \item Participated in Robomasters Competition, which is a robot design and computer vision competition.
+      \item Built a machine learning framwork for designing a robot, which is used for detecting moving obejects.
       \item Was in charge of designing unmanned vehicles with automatic target recognition, tracking system, and path planning function, which can automatically fire shells to fight against enemy unmanned vehicles.
       \item Used structural features to design a target tracking algorithm.
-      \item Implemented Fast RCNN model for recoginizing the target in the video from the unmanned vehicles.
+      \item Implemented Fast RCNN model for recoginizing the target in the video.
     \end{itemize}
   }
-  % ASC 比赛
-  \cventry{March 2016 -- April 2016}{Compete in ASC Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{China}{}{
-      \begin{itemize}
-        \item Won Prize of Excellence in the challenge.
-        \item Designed and optimize algorithms in HPC.
-        \item Used HPCG Test to get highest possible efficiency.
-        \item Gave an useful optimization for the DNN program on the CPU + MIC Platform.
-      \end{itemize}
-  }
-  \cventry{January 2016 -- April 2016}{Data Science Engineering Intern}{Future Network institute}{Nanjing, China}{}{
+
+\section{Work Experience} 
+  % % ASC 比赛
+  % \cventry{March 2016 -- April 2016}{Compete in ASC Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{P.R. China }{}{
+  %     \begin{itemize}
+  %       \item Won Prize of Excellence in the challenge.
+  %       \item Designed and optimize algorithms in HPC.
+  %       \item Used HPCG Test to get highest possible efficiency.
+  %       \item Gave an useful optimization for the DNN program on the CPU + MIC Platform.
+  %     \end{itemize}
+  % }
+  \cventry{Jan. 2016 - Apr. 2016}{Data Science Engineering Intern}{Future Network institute}{Nanjing, P.R. China}{}{
       \begin{itemize}
         \item Aanlyzed the data provided by AP and WiFi monitors every day.
         \item Used Spark to deal with the whole log data provided by monitors. 
         \item Developed a model to track each person's network behavior in the whole system.
       \end{itemize}
   }
-  \cventry{October 2015 - January 2016}{MusicFM website}{NJUST}{Nanjing, China}{}{
+  % 在线问答平台
+  \cventry{Apr. 2014 - Jul. 2014}{Lead Developer}{Huawei Technologies Co. Ltd}{Xiamen, P.R. China}{}{
+      \begin{itemize}
+        \item Designed a smart answering robot service system by PHP programming.
+        \item Utilized knowledge of Q\&A corpus to manage responses to questions. 
+        \item Implemented words classification by employing supervised learning techniques.
+        \item Created a service robot capable of responding to users’ tourism queries.
+      \end{itemize}
+  }
+ 
+\section{Student Project} 
+  \cventry{October 2015 - December 2015}{MusicFM website}{NJUST}{Nanjing, P.R. China }{}{
     \begin{itemize}
       \item Built an online music website (music.smilebooky.com) using node.js.
+      \item Developed sipder programer to get all the music data(10 million songs) in an online music platform. Tried to analyzed and visualized all the data.
       \item Performed ORM and routing assignment using MongoDB as database.
       \item Designed front-end UI by using Bootstrap and Angular.
       \item Implemented a recommendation system by using clustering methods to recommend top 5 songs.
     \end{itemize}
   }
+\section{HONORS \& AWARDS}
+\cventry{Mar. 2016}{Outstanding Graduate}{NJUST}{Nanjing, P.R. China}{}{}
+\cventry{Mar. 2016}{Prize for Excellence in Asia Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{}{}{Designed and optimize algorithms in HPC, and tried to optimize the DNN program on the CPU + MIC Platform}
+\cventry{Nov. 2015}{Bronze Medal in ACM/ICPC - Beijing Regional}{Association for Computing Machinery}{New York City, NY}{}{Got a rank of 62/200}
+\cventry{Oct. 2015}{Outstanding Students Award}{China Computer Federation}{}{}{Represented university to get this award}
+\cventry{Jul. 2014}{Silver Medal in ACM/ICPC - Shanghai Inivation Contest}{Association for Computing Machinery}{New York City, NY}{}{}
+\cventry{Jun. 2014}{1st Prize in "Bluebridge" Cup National Software Design Contest}{Ministry of Industry and Information Technology}{Beijing, P.R. China}{}{Got a rank of 3/10K in National Final}
+\cventry{Nov. 2013}{Bronze Medal in ACM/ICPC - Changsha Regional}{Association for Computing Machinery}{New York City, NY}{}{}
+\cventry{Sep. 2012 - Jun. 2016}{1st Prize Scholarship}{NJUST}{Nanjing, P.R. China}{}{Won every year in university}
 
-\section{Education}
-\cventry{Fall 2016 - }{M.S., Computer Science,  University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
-\cventry{Fall 2012 - Summer 2016}{Computer Science, Nanjing University of Science \& Technology}{Nanjing, China}{}{Overall GPA: 3.6}{CS Majors GPA: 3.6 Rank: 2} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
 \section{Extra}
   \cvlistitem{Contributor to open source projects - see \url{https://github.com/LichAmnesia}}
-  \cvlistitem{5th Overall, Bronze Medal in the ACM - International Collegiate Programming Contest}
-  \cvlistitem{3rd in the National Software Design Contest}
-  \cvlistitem{Outstanding Students Award in China}
-  \cvlistitem{Member of the GDG Sub}
+  \cvlistitem{Member of the Google Developer Groups Sub (Be invited to Google I/O 2016)}
+  \cvlistitem{Teaching Assistant for Course of C Programming Language for International Students}
+
+\section{Computer Skills}
+  \cvline{Languages:}{Python, Java, C/C++, Ruby, JavaScript, Mathematica, Matlab}
+  \cvline{OS:}{Linux(CentOS, Ubuntu), Windows}
+  \cvline{Database:}{MySQL, MongoDb, Hbase}
 \end{document}
