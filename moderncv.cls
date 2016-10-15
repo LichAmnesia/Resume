@@ -202,6 +202,7 @@
 \providecommand*{\faxsymbol}{\FAX}
 \providecommand*{\emailsymbol}{\Letter}
 \providecommand*{\homepagesymbol}{{\Large\ComputerMouse}}
+\providecommand*{\extrasymbol}{{\Large\Keyboard}}
 
 % colors
 \definecolor{firstnamecolor}{rgb}{0,0,0}

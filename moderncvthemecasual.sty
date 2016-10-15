@@ -112,11 +112,12 @@
     \hfill%
 %    \raggedleft{\firstnamestyle{\MakeLowercase{\@firstname}}\familynamestyle{\MakeLowercase{\@familyname}}}\\[-.35em]}%
     \raggedleft{\firstnamestyle{\@firstname}~\familynamestyle{\@familyname}}\\[-.35em]}%
-  {\color{firstnamecolor}\rule{\textwidth}{.25ex}\\[2.5em]}%
+  {\color{firstnamecolor}\rule{\textwidth}{.25ex}\\[0.5em]}%
 % optional quote
   \ifthenelse{\isundefined{\@quote}}%
     {}%
-    {{\centering{}\begin{minipage}{\quotewidth}\centering\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
+    % The following line deleted for more less space.
+    % {{\centering{}\begin{minipage}{\quotewidth}\centering\quotestyle{\@quote}\end{minipage}\\[2.5em]}}%
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \maketitle
 
 % cv footer

@@ -11,7 +11,7 @@
 \documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
 
-\moderncvtheme[darkred]{classic}
+\moderncvtheme[darkred]{casual}
 
 % DOCUMENT LAYOUT
 \usepackage[scale=0.85]{geometry}
@@ -43,6 +43,7 @@
 \mobile{(303) 243-2881}
 \email{Shen.Huang@Colorado.edu}
 \homepage{alwa.info}
+\extrainfo{https://github.com/LichAmnesia}
 
 \title{Shen Huang's Resume}
 
@@ -55,32 +56,17 @@
 \begin{document}
 
 \maketitle
+\section{Summary}
+% \cventry{}{}{}{Enthusiastic in data science in and learn fast}{Want to get an intern of Software Engineer}{} 
+\cvline{}{I am a software developer, passionate in top niche tools for analyzing data. I have solid knowledge of Python, Java, C/C++ and work well with Spring, Django. Well familiar with MEAN (MongoDB, Express, Angular, Node) stack. And I have experience with Hive, Hbase bid data frameworks. I prefer to get an intern for software engineer.}
 
 \section{Education}
-\cventry{Aug. 2016 - Present}{Master of Science, Computer Science,  University of Colorado Boulder}{Boulder, CO}{}{}{Overall GPA: Null} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
-\cventry{Aug. 2012 - Jun. 2016}{Bachelor of Engineering, Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS Majors GPA: 3.6 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
-\section{Research Experience} 
-  % Bioinformatics 研究
-  \cventry{Sep. 2015 - Jul. 2016}{Research Assistant}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, P.R. China}{Supervised by Dongjun Yu}{
-    \begin{itemize}
-      \item Tried to solve a protein problem of predicting high-dimensional structural information via little information of protein sequence.
-      \item The traditional strategy for this topic was using machine learning methods. Implemented these and propose a new feature extraction method.
-      \item Tried to use DNN model in this problem and succeeded, which was not shown work in this field. 
-    \end{itemize}
-  }
-  % RM 视觉比赛
-  \cventry{Ari. 2016 - Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
-    \begin{itemize}
-      \item Built a machine learning framwork for designing a robot, which is used for detecting moving obejects.
-      \item Was in charge of designing unmanned vehicles with automatic target recognition, tracking system, and path planning function, which can automatically fire shells to fight against enemy unmanned vehicles.
-      \item Used structural features to design a target tracking algorithm.
-      \item Implemented Fast RCNN model for recoginizing the target in the video.
-    \end{itemize}
-  }
+\cventry{Aug. 2016 - }{Master of Science, Computer Science, University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\cventry{Aug. 2012 -Jun. 2016}{Bachelor of Engineering, Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS major GPA: 3.6/4.0 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
 
 \section{Work Experience} 
   % % ASC 比赛
-  % \cventry{March 2016 -- April 2016}{Compete in ASC Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{P.R. China }{}{
+  % \cventry{March 2016 --April 2016}{Compete in ASC Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{P.R. China }{}{
   %     \begin{itemize}
   %       \item Won Prize of Excellence in the challenge.
   %       \item Designed and optimize algorithms in HPC.
@@ -88,50 +74,118 @@
   %       \item Gave an useful optimization for the DNN program on the CPU + MIC Platform.
   %     \end{itemize}
   % }
-  \cventry{Jan. 2016 - Apr. 2016}{Data Science Engineering Intern}{Future Network institute}{Nanjing, P.R. China}{}{
+% Clean data by AP and WiFi, write a python script of hive sql to deal with the data. Raw data is stored in Redis.
+% After cleaning and deal with the data. The data should be stored in HDFS. 
+  \cventry{Jan. 2016 -May. 2016}{Software Engineer Intern}{Future Network institute}{Nanjing, P.R. China}{}{
       \begin{itemize}
-        \item Aanlyzed the data provided by AP and WiFi monitors every day.
-        \item Used Spark to deal with the whole log data provided by monitors. 
-        \item Developed a model to track each person's network behavior in the whole system.
+        \item Mainly used \textbf{Java} to help build a system for analyzing nationaly network flow.
+        \item Collected and analyzed the data from AP and WiFi using \textbf{Cloudera}.
+        \item Used \textbf{Hive} and \textbf{Hbase} to deal with the whole log data provided by monitors. 
+        \item Utilized \textbf{Spring MVC} to deal with RESTful services and \textbf{myBatis} for ORM. 
+        \item Developed an API for \textbf{Redis} and wrote unit test in \textbf{JUnit}.
       \end{itemize}
   }
+  % Event Create and Share
+  \cventry{Sep. 2016 -}{Lead Developer}{University of Colorado Boulder}{Boulder, CO}{}{
+    \begin{itemize}
+      \item Built a website that people can create an event and other can participate in this event.
+      \item Mainly utilized \textbf{myBatis} and \textbf{Spring} to build the back-end system.
+      \item Designed front-end UI by Twitter \textbf{Bootstrap} and used \textbf{React} for building user interface.
+    \end{itemize}
+  }
+  % OJ 开发
+  % \cventry{Apr. 2014 -Jan. 2016}{Software Engineer}{NJUST}{Nanjing, P.R. China}{}{
+  %     \begin{itemize}
+  %       \item Maintain an online judge (njoj.org) of a non-profit organization.
+  %       \item Designed a smart answering robot service system by \textbf{Python Django}.
+  %       \item Utilized knowledge of Q\&A corpus to manage responses to questions. 
+  %       \item Implemented \textbf{word embeddings} by employing supervised learning techniques.
+  %       \item Created a service robot capable of responding to users’ tourism queries.
+  %     \end{itemize}
+  % }
   % 在线问答平台
-  \cventry{Apr. 2014 - Jul. 2014}{Lead Developer}{Huawei Technologies Co. Ltd}{Xiamen, P.R. China}{}{
+  \cventry{Apr. 2014 -Jul. 2014}{Lead Developer}{Huawei Technologies Co. Ltd}{Xiamen, P.R. China}{}{
       \begin{itemize}
-        \item Designed a smart answering robot service system by PHP programming.
+        \item Designed a smart answering robot service system by \textbf{Python Django}.
         \item Utilized knowledge of Q\&A corpus to manage responses to questions. 
-        \item Implemented words classification by employing supervised learning techniques.
+        \item Implemented \textbf{word embeddings} by employing supervised learning techniques.
         \item Created a service robot capable of responding to users’ tourism queries.
       \end{itemize}
   }
- 
+% 集合（collection）与文档（document）
+% 面向文档的存储：以 JSON 格式的文档保存数据。
 \section{Student Project} 
-  \cventry{October 2015 - December 2015}{MusicFM website}{NJUST}{Nanjing, P.R. China }{}{
+  \cventry{Jul. 2016 -Aug. 2016}{Pandaman Generator}{University of Colorado Boulder}{Boulder, CO}{}{
     \begin{itemize}
-      \item Built an online music website (music.smilebooky.com) using node.js.
-      \item Developed sipder programer to get all the music data(10 million songs) in an online music platform. Tried to analyzed and visualized all the data.
-      \item Performed ORM and routing assignment using MongoDB as database.
-      \item Designed front-end UI by using Bootstrap and Angular.
-      \item Implemented a recommendation system by using clustering methods to recommend top 5 songs.
+      \item Developed a \textbf{Python} tool to generate pandaman avatar using \textbf{OpenCV}.
+      \item Trained a \textbf{AdaBoost} classifier to select the face in a picture.
+      \item Used a \textbf{filter} function to deal with the face and put into a pandaman avatar.
     \end{itemize}
   }
+  \cventry{Sep. 2016 -Sep. 2016}{Boulder News}{University of Colorado Boulder}{Boulder, CO}{}{
+    \begin{itemize}
+      \item Utilized a \textbf{Python Tornado} to build a website (weather.alwa.info) to track weather in Boulder. 
+      \item Wrote a spider program via \textbf{Python Requests} to get data from weather.com.
+      \item Developed a system if the weather varies, it will send email and message to alert.
+    \end{itemize}
+  }
+  \cventry{Oct. 2015 -Dec. 2015}{MusicFM website}{NJUST}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Built an online music website (music.smilebooky.com) using \textbf{Node.js} and \textbf{Express}.
+      \item Developed a \textbf{Python} sipder program to get all the music information(10 million songs) in an online music platform. Tried to analyzed and visualized all the data via \textbf{d3.js}.
+      \item Performed ORM and routing assignment using \textbf{MongoDB} as database.
+      \item Designed front-end UI by \textbf{Bootstrap} and \textbf{Angular}.
+      \item Implemented a \textbf{Collaborative Filtering} algorithm to recommend top 5 songs.
+    \end{itemize}
+  }
+  
+
+\section{Research Experience} 
+  % Bioinformatics 研究
+  \cventry{Sep. 2015 -Jul. 2016}{Research Assistant}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, P.R. China}{Supervised by Dongjun Yu}{
+    \begin{itemize}
+      \item Tried to solve a protein problem of predicting high-dimensional structural information via little information of protein sequence.
+      \item The traditional strategy for this topic used machine learning methods. Implemented these and proposed a new feature extraction method, which used 3D information of predicted protein.
+      \item Tried to use \textbf{DNN model} in this problem and succeeded to get higher AUC in this problem. 
+    \end{itemize}
+  }
+  % RM 视觉比赛
+% 1.用selective search方法划分2k-45k个region；
+% 2.分别对每个region提取特征，最后将提取到的特征送到k(k的取值与类别数相等) svm分类器中识别以及送到一个回归器中去调节检测框的位置；
+% 3.将k个SVM分类器中得分最高的类作为分类结果，将所有得分都不高的region作为背景；
+% 4.通过回归器调整之后的结果即为检测到的位置。
+% http://tangxman.github.io/2015/12/10/rcnn/
+% First using selective search methods to get regions. should use cnn to select features. And then train k lsvm to classify. The end is Boundingbox Regression to adjust regions. caffe-fast-rcnn
+% Use tegra: make cuda, and caffe
+  \cventry{Apr. 2016 -Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Built a machine learning framework for designing a robot, which used for detecting moving obejects via embedded device.
+      \item In charge of designing unmanned vehicles with automatic target recognition and path planning function.
+      \item Implemented Faster \textbf{RCNN model} for Real-time target detection.
+      \item Applied the detection algorithm in \textbf{Nvidia Tegra K1} platform.
+    \end{itemize}
+  }
+
 \section{HONORS \& AWARDS}
 \cventry{Mar. 2016}{Outstanding Graduate}{NJUST}{Nanjing, P.R. China}{}{}
-\cventry{Mar. 2016}{Prize for Excellence in Asia Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{}{}{Designed and optimize algorithms in HPC, and tried to optimize the DNN program on the CPU + MIC Platform}
-\cventry{Nov. 2015}{Bronze Medal in ACM/ICPC - Beijing Regional}{Association for Computing Machinery}{New York City, NY}{}{Got a rank of 62/200}
+\cventry{Mar. 2016}{Prize for Excellence in Asia Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{}{}{}
+% \cventry{Mar. 2016}{Prize for Excellence in Asia Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{}{}{Designed and optimize algorithms in HPC, and tried to optimize the \textbf{DNN} program on the \textbf{CPU + MIC} Platform}
+\cventry{Nov. 2015}{Bronze Medal in ACM/ICPC - Beijing Regional}{ACM}{}{}{} % Got a rank of 62/200
 \cventry{Oct. 2015}{Outstanding Students Award}{China Computer Federation}{}{}{Represented university to get this award}
-\cventry{Jul. 2014}{Silver Medal in ACM/ICPC - Shanghai Inivation Contest}{Association for Computing Machinery}{New York City, NY}{}{}
+\cventry{Jul. 2014}{Silver Medal in ACM/ICPC - Shanghai Inivation Contest}{ACM}{}{}{}
 \cventry{Jun. 2014}{1st Prize in "Bluebridge" Cup National Software Design Contest}{Ministry of Industry and Information Technology}{Beijing, P.R. China}{}{Got a rank of 3/10K in National Final}
-\cventry{Nov. 2013}{Bronze Medal in ACM/ICPC - Changsha Regional}{Association for Computing Machinery}{New York City, NY}{}{}
-\cventry{Sep. 2012 - Jun. 2016}{1st Prize Scholarship}{NJUST}{Nanjing, P.R. China}{}{Won every year in university}
-
-\section{Extra}
-  \cvlistitem{Contributor to open source projects - see \url{https://github.com/LichAmnesia}}
-  \cvlistitem{Member of the Google Developer Groups Sub (Be invited to Google I/O 2016)}
-  \cvlistitem{Teaching Assistant for Course of C Programming Language for International Students}
+\cventry{Nov. 2013}{Bronze Medal in ACM/ICPC - Changsha Regional}{ACM}{}{}{}
+% \cventry{Sep. 2012 -Jun. 2016}{1st Prize Scholarship}{NJUST}{Nanjing, P.R. China}{}{Won every year in university}
 
 \section{Computer Skills}
-  \cvline{Languages:}{Python, Java, C/C++, Ruby, JavaScript, Mathematica, Matlab}
-  \cvline{OS:}{Linux(CentOS, Ubuntu), Windows}
+  \cvline{Languages:}{\textbf{Python}, \textbf{Java}, \textbf{C/C++}, JavaScript, Mathematica}
+  \cvline{OS:}{Linux(Ubuntu, CentOS), Windows}
   \cvline{Database:}{MySQL, MongoDb, Hbase}
+
+\section{Extra}
+  % \cvlistitem{Contributor to open source projects - see \url{https://github.com/LichAmnesia}}
+  \cvlistitem{Member of the Google Developer Groups Sub (Be invited to Google I/O 2016)}
+  \cvlistitem{Help Huawei Technologies Co. set about 300 interview questions in their system}
+  \cvlistitem{Teaching Assistant for Course of C Programming Language for International Students}
+
 \end{document}
