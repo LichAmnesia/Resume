@@ -1,2 +1,7 @@
 *.aux
 *.out
+To_Learn/
+*.fls
+*.log
+*.gz
+*.fdb_latexmk

@@ -1,0 +1,104 @@
+%-----------------------------------------
+% Shen Huang
+% Resume
+%
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt,letterpaper,final]{moderncv}
+\usepackage{fontspec}
+
+\moderncvtheme[darkred]{classic}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+% FONTS
+\usepackage[utf8]{inputenc}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+% Remove % to set to different fonts
+%\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+
+
+% Personal Information 
+\firstname{Shen}
+\familyname{Huang}
+\mobile{(303) 243-2881}
+\email{Shen.Huang@Colorado.edu}
+\homepage{alwa.info}
+\extrainfo{https://github.com/LichAmnesia}
+
+\title{Shen Huang's Resume}
+
+% \nopagenumbers{}
+\usepackage{lastpage}%获得总页数
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \rfoot{\thepage\ / \pageref{LastPage}}%当前页 of 总页数
+
+\begin{document}
+
+\maketitle
+\section{Summary}
+% \cventry{}{}{}{Enthusiastic in data science in and learn fast}{Want to get an intern of Software Engineer}{} 
+\cvline{}{Enthusiastic in new technologies and learn fast. Want to get an intern for data science engineer or software engineer.}
+
+\section{Education}
+\cventry{Aug. 2016 - }{Master of Science, Computer Science,  University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\cventry{Aug. 2012 -Jun. 2016}{Bachelor in Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS Majors GPA: 3.6 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+
+\section{Experience} 
+  \cventry{Apr. 2016 -Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Built machine learning framework of unmanned vehicle for detecting moving obejects via Embedded device.
+      \item Implemented Faster \textbf{RCNN model} for Real-time target detection.
+      \item Applied the detection algorithm in \textbf{Nvidia Tegra K1} platform.
+    \end{itemize}
+  }
+% Clean data by AP and WiFi 
+  \cventry{Jan. 2016 -Apr. 2016}{Data Science Engineer Intern}{Future Network institute}{Nanjing, P.R. China}{}{
+      \begin{itemize}
+        \item Collected and anlyzed the data provided by AP and WiFi every day using \textbf{Cloudera}.
+        \item Used \textbf{Spark} to deal with the whole log data provided by monitors. 
+        \item Developed an algorithm to track each person's network behavior in the whole system.
+      \end{itemize}
+  }
+ 
+\section{Student Project} 
+  \cventry{Oct. 2015 -Dec. 2015}{MusicFM website}{NJUST}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Built an online music website (music.smilebooky.com) using \textbf{Node.js}.
+      \item Developed sipder programer to get all the music information(10 million songs) in an online music platform. Tried to analyzed and visualized all the data via \textbf{d3.js}.
+      \item Performed ORM and routing assignment using \textbf{MongoDB} as database.
+      \item Designed front-end UI by using \textbf{Bootstrap} and \textbf{Angular}.
+      \item Implemented a \textbf{Collaborative Filtering} algorithm by using to recommend top 5 songs.
+    \end{itemize}
+  }
+
+\section{HONORS \& AWARDS}
+\cventry{Mar. 2016}{Prize for Excellence in Asia Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{}{}{}
+\cventry{Oct. 2015}{Outstanding Students Award}{China Computer Federation}{}{}{}
+\cventry{Jul. 2014}{Silver Medal in ACM/ICPC - Shanghai Inivation Contest}{ACM}{}{}{}
+
+\section{Computer Skills}
+  \cvline{Languages:}{\textbf{Python}, \textbf{Java}, C/C++, JavaScript, Mathematica}
+  \cvline{OS:}{Linux(Ubuntu, CentOS), Windows}
+  \cvline{Database:}{MySQL, MongoDb, Hbase}
+
+\end{document}
