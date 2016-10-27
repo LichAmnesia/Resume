@@ -56,13 +56,39 @@
 \begin{document}
 
 \maketitle
-\section{Summary}
-% \cventry{}{}{}{Enthusiastic in data science in and learn fast}{Want to get an intern of Software Engineer}{} 
-\cvline{}{I am a software developer, passionate in top niche tools for analyzing data. I have solid knowledge of Python, Java, C/C++ and work well with Spring, Django. Well familiar with MEAN (MongoDB, Express, Angular, Node) stack. And I have experience with Hive, Hbase big data frameworks. I prefer to get an intern for software engineer.}
+% \section{Summary}
+% % \cventry{}{}{}{Enthusiastic in data science in and learn fast}{Want to get an intern of Software Engineer}{} 
+% \cvline{}{I am a software developer, passionate in top niche tools for analyzing data. I have solid knowledge of Python, Java, C/C++ and work well with Spring, Django. Well familiar with MEAN (MongoDB, Express, Angular, Node) stack. And I have experience with Hive, Hbase big data frameworks. I prefer to get an intern for software engineer.}
 
 \section{Education}
-\cventry{Aug. 2016 - }{Master of Science, Computer Science, University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
-\cventry{Aug. 2012 -Jun. 2016}{Bachelor of Engineering, Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS major GPA: 3.6/4.0 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\cventry{May. 2018}{Master of Science, Computer Science, University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\cventry{Jun. 2016}{Bachelor of Engineering, Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS major GPA: 3.6/4.0 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+
+\section{Research Experience} 
+  % Bioinformatics 研究
+  \cventry{Sep. 2015 -Jul. 2016}{Research Assistant}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, P.R. China}{Supervised by Dongjun Yu}{
+    \begin{itemize}
+      \item Tried to solve a protein problem of predicting high-dimensional structural information via little information of protein sequence.
+      \item The traditional strategy for this topic used machine learning methods. Implemented these and proposed a new feature extraction method, which used 3D information of predicted protein.
+      \item Tried to use \textbf{DNN model} in this problem and succeeded to get higher AUC in this problem. 
+    \end{itemize}
+  }
+  % RM 视觉比赛
+% 1.用selective search方法划分2k-45k个region；
+% 2.分别对每个region提取特征，最后将提取到的特征送到k(k的取值与类别数相等) svm分类器中识别以及送到一个回归器中去调节检测框的位置；
+% 3.将k个SVM分类器中得分最高的类作为分类结果，将所有得分都不高的region作为背景；
+% 4.通过回归器调整之后的结果即为检测到的位置。
+% http://tangxman.github.io/2015/12/10/rcnn/
+% First using selective search methods to get regions. should use cnn to select features. And then train k lsvm to classify. The end is Boundingbox Regression to adjust regions. caffe-fast-rcnn
+% Use tegra: make cuda, and caffe
+  \cventry{Apr. 2016 -Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Built a machine learning framework for designing a robot, which used for detecting moving obejects via embedded device.
+      \item In charge of designing unmanned vehicles with automatic target recognition and path planning function.
+      \item Implemented Faster \textbf{RCNN model} for Real-time target detection.
+      \item Applied the detection algorithm in \textbf{Nvidia Tegra K1} platform.
+    \end{itemize}
+  }
 
 \section{Work Experience} 
   % % ASC 比赛
@@ -86,13 +112,19 @@
       \end{itemize}
   }
   % Event Create and Share
-  \cventry{Sep. 2016 -}{Lead Developer}{University of Colorado Boulder}{Boulder, CO}{}{
+  \cventry{Sep. 2016 -Oct. 2016}{Lead Developer}{University of Colorado Boulder}{Boulder, CO}{}{
     \begin{itemize}
       \item Built a website that people can create an event and other can participate in this event.
       \item Mainly utilized \textbf{myBatis} and \textbf{Spring} to build the back-end system.
       \item Designed front-end UI by Twitter \textbf{Bootstrap} and used \textbf{React} for building user interface.
     \end{itemize}
   }
+  \cventry{Jan. 2015 -Jan. 2016}{Teaching Assistant}{C Programming Language for international students}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Assisted professor to help students about problems in programming.
+      \item Supervised students' practical team project work by giving advise on techniques.
+    \end{itemize}
+  } 
   % OJ 开发
   % \cventry{Apr. 2014 -Jan. 2016}{Software Engineer}{NJUST}{Nanjing, P.R. China}{}{
   %     \begin{itemize}
@@ -140,31 +172,7 @@
   }
   
 
-\section{Research Experience} 
-  % Bioinformatics 研究
-  \cventry{Sep. 2015 -Jul. 2016}{Research Assistant}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, P.R. China}{Supervised by Dongjun Yu}{
-    \begin{itemize}
-      \item Tried to solve a protein problem of predicting high-dimensional structural information via little information of protein sequence.
-      \item The traditional strategy for this topic used machine learning methods. Implemented these and proposed a new feature extraction method, which used 3D information of predicted protein.
-      \item Tried to use \textbf{DNN model} in this problem and succeeded to get higher AUC in this problem. 
-    \end{itemize}
-  }
-  % RM 视觉比赛
-% 1.用selective search方法划分2k-45k个region；
-% 2.分别对每个region提取特征，最后将提取到的特征送到k(k的取值与类别数相等) svm分类器中识别以及送到一个回归器中去调节检测框的位置；
-% 3.将k个SVM分类器中得分最高的类作为分类结果，将所有得分都不高的region作为背景；
-% 4.通过回归器调整之后的结果即为检测到的位置。
-% http://tangxman.github.io/2015/12/10/rcnn/
-% First using selective search methods to get regions. should use cnn to select features. And then train k lsvm to classify. The end is Boundingbox Regression to adjust regions. caffe-fast-rcnn
-% Use tegra: make cuda, and caffe
-  \cventry{Apr. 2016 -Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
-    \begin{itemize}
-      \item Built a machine learning framework for designing a robot, which used for detecting moving obejects via embedded device.
-      \item In charge of designing unmanned vehicles with automatic target recognition and path planning function.
-      \item Implemented Faster \textbf{RCNN model} for Real-time target detection.
-      \item Applied the detection algorithm in \textbf{Nvidia Tegra K1} platform.
-    \end{itemize}
-  }
+
 
 \section{HONORS \& AWARDS}
 \cventry{Mar. 2016}{Outstanding Graduate}{NJUST}{Nanjing, P.R. China}{}{}
@@ -184,8 +192,7 @@
 
 \section{Extra}
   % \cvlistitem{Contributor to open source projects - see \url{https://github.com/LichAmnesia}}
-  \cvlistitem{Member of the Google Developer Groups Sub (Be invited to Google I/O 2016)}
+  \cvlistitem{Member of the Google Developer Groups Sub (Invited to Google I/O 2016)}
   \cvlistitem{Help Huawei Technologies Co. set about 300 interview questions in their system}
-  \cvlistitem{Teaching Assistant for Course of C Programming Language for International Students}
 
 \end{document}

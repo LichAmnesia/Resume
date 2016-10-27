@@ -11,7 +11,7 @@
 \documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
 
-\moderncvtheme[darkred]{classic}
+\moderncvtheme[darkred]{casual}
 
 % DOCUMENT LAYOUT
 \usepackage[scale=0.85]{geometry}
@@ -55,50 +55,52 @@
 \begin{document}
 
 \maketitle
-\section{Summary}
-% \cventry{}{}{}{Enthusiastic in data science in and learn fast}{Want to get an intern of Software Engineer}{} 
-\cvline{}{Enthusiastic in new technologies and learn fast. Want to get an intern for data science engineer or software engineer.}
-
 \section{Education}
-\cventry{Aug. 2016 - }{Master of Science, Computer Science,  University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
-\cventry{Aug. 2012 -Jun. 2016}{Bachelor in Computer Science, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS Majors GPA: 3.6 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
-
-\section{Experience} 
-  \cventry{Apr. 2016 -Jun. 2016}{Research Assistant}{NJUST}{Nanjing, P.R. China}{}{
-    \begin{itemize}
-      \item Built machine learning framework of unmanned vehicle for detecting moving obejects via Embedded device.
-      \item Implemented Faster \textbf{RCNN model} for Real-time target detection.
-      \item Applied the detection algorithm in \textbf{Nvidia Tegra K1} platform.
-    \end{itemize}
-  }
-% Clean data by AP and WiFi 
-  \cventry{Jan. 2016 -Apr. 2016}{Data Science Engineer Intern}{Future Network institute}{Nanjing, P.R. China}{}{
+\cventry{May. 2018}{MS CS,  University of Colorado Boulder}{Boulder, CO}{}{}{} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\cventry{Jul. 2016}{BS CS, Nanjing University of Science \& Technology}{Nanjing, P.R. China}{}{}{Overall GPA: 3.6, CS Majors GPA: 3.6 Rank: 5\%} % Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0
+\section{Work Experience} 
+  % Clean data by AP and WiFi 
+  \cventry{Jan. 2016 -May. 2016}{Data Science Engineer Intern}{Future Network Institute}{Nanjing, P.R. China}{}{
       \begin{itemize}
-        \item Collected and anlyzed the data provided by AP and WiFi every day using \textbf{Cloudera}.
-        \item Used \textbf{Spark} to deal with the whole log data provided by monitors. 
-        \item Developed an algorithm to track each person's network behavior in the whole system.
+        \item Built a Java system for analyzing national network flow.
+        \item Collected and analyzed the data from AP and WiFi using \textbf{Cloudera}.
+        \item Used \textbf{Hive} and \textbf{Hbase} to deal with the whole log data provided by monitors. 
+        \item Utilized \textbf{Spring MVC} to build RESTful services and \textbf{myBatis} for ORM. 
+        \item Developed an API for \textbf{Redis} and wrote unit test in \textbf{JUnit}.
       \end{itemize}
   }
- 
+  \cventry{Sep. 2015 -Jul. 2016}{Research Assistant}{Pattern Recognition and Bioinformatics Group in NJUST}{Nanjing, P.R. China}{Supervised by Dongjun Yu}{
+    \begin{itemize}
+      \item Tried to solve a protein problem of predicting high-dimensional structural information via little information of protein sequence.
+      \item The traditional strategy for this topic used machine learning methods. Implemented these and proposed a new feature extraction method, which used 3D information and annotated information.
+      \item Tried to use \textbf{DNN model} in this problem and succeeded to get higher AUC in this problem. 
+    \end{itemize}
+  } 
+  \cventry{Jan. 2015 -Jan. 2016}{Teaching Assistant}{C Programming Language for international students}{Nanjing, P.R. China}{}{
+    \begin{itemize}
+      \item Assisted professor to help students about problems in programming.
+      \item Supervised students' practical team project work by giving advise on techniques.
+    \end{itemize}
+  } 
 \section{Student Project} 
   \cventry{Oct. 2015 -Dec. 2015}{MusicFM website}{NJUST}{Nanjing, P.R. China}{}{
     \begin{itemize}
-      \item Built an online music website (music.smilebooky.com) using \textbf{Node.js}.
-      \item Developed sipder programer to get all the music information(10 million songs) in an online music platform. Tried to analyzed and visualized all the data via \textbf{d3.js}.
-      \item Performed ORM and routing assignment using \textbf{MongoDB} as database.
-      \item Designed front-end UI by using \textbf{Bootstrap} and \textbf{Angular}.
-      \item Implemented a \textbf{Collaborative Filtering} algorithm by using to recommend top 5 songs.
+      \item Built an online music website using \textbf{Node.js} and \textbf{Express}.
+      \item Developed a \textbf{Python} sipder program to get all the music information(10 million songs) in an online music platform. Tried to analyzed and visualized all the data via \textbf{d3.js}.
+      \item Performed ORM by \textbf{MongoDB}. Designed front-end UI by \textbf{Bootstrap} and \textbf{Angular}.
+      \item Implemented a \textbf{Collaborative Filtering} algorithm to recommend top 5 songs.
     \end{itemize}
   }
-
 \section{HONORS \& AWARDS}
 \cventry{Mar. 2016}{Prize for Excellence in Asia Student Supercomputer Challenge}{Inspur Group Co., Ltd.}{}{}{}
 \cventry{Oct. 2015}{Outstanding Students Award}{China Computer Federation}{}{}{}
 \cventry{Jul. 2014}{Silver Medal in ACM/ICPC - Shanghai Inivation Contest}{ACM}{}{}{}
-
 \section{Computer Skills}
   \cvline{Languages:}{\textbf{Python}, \textbf{Java}, C/C++, JavaScript, Mathematica}
-  \cvline{OS:}{Linux(Ubuntu, CentOS), Windows}
+  \cvline{OS:}{Linux(Ubuntu, CentOS), Windows, AWS}
   \cvline{Database:}{MySQL, MongoDb, Hbase}
-
+\section{Extra}
+  % \cvlistitem{Contributor to open source projects - see \url{https://github.com/LichAmnesia}}
+  \cvlistitem{Core member of the Google Developer Groups Sub (Invited to Google I/O 2016)}
+  \cvlistitem{Help Huawei Technologies Co. set about 300 interview questions in their system}
 \end{document}
