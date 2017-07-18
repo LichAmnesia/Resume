@@ -5,3 +5,5 @@ To_Learn/
 *.log
 *.gz
 *.fdb_latexmk
+*.pdf
+*.xdv
